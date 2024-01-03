@@ -1,10 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import './About.css'
 import imgs from '../../assets/Tech/React.png'
+import ScrollReveal from 'scrollreveal'
 
 const About = () => {
   let arr = Array.from('Front-End Developer')
   const [angle, setAngle] = useState(12)
+
+  const config1 = {
+    origin: "top",
+    duration: 1000,
+    delay: 150,
+    distance: "20px",
+    scale: 1,
+    easing: "ease",
+  };
+
+  const config2 = {
+    origin: "bottom",
+    duration: 1000,
+    delay: 150,
+    distance: "20px",
+    scale: 1,
+    easing: "ease",
+  };
 
   useEffect(()=>{    
     window.addEventListener('resize', ()=>{
@@ -15,6 +34,8 @@ const About = () => {
         setAngle(12)
       }
     })
+    ScrollReveal().reveal('.about-left-container', config1)
+    ScrollReveal().reveal('.about-right-container', config2)
   }, [])
 
   const animateCircle = (e, i) =>{

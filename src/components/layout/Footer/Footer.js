@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {faAnglesUp} from '@fortawesome/free-solid-svg-icons'
@@ -6,7 +6,11 @@ import './Footer.css'
 
 const Footer = () => {
 
-  const [date, setDate] = useState(new Date().getFullYear())  
+  const [date, setDate] = useState(new Date().getFullYear()) 
+  
+  useEffect(()=>{
+    setDate(new Date().getFullYear())
+  }, [])
 
   return (
     <footer className='footer'>

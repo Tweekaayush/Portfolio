@@ -8,12 +8,6 @@ const projects = [
         link:"https://tweekaayush.github.io/todolist-app-react/"
     },
     {
-        id:2,
-        img: todolist,
-        title:"Patatap Clone",
-        link:"https://tweekaayush.github.io/Patatap-Clone/"
-    },
-    {
         id:1,
         img: weatherApp,
         title:"Weather App",

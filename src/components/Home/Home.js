@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
@@ -6,9 +7,45 @@ import html from '../../assets/Tech/HTML5.png'
 import css from '../../assets/Tech/CSS3.png'
 import js from '../../assets/Tech/JavaScript.png'
 import react from '../../assets/Tech/React.png'
-import './Home.css'
+import ScrollReveal from 'scrollreveal'
+
 
 const Home = () => {
+
+  let config1 = {
+    origin: "top",
+    duration: 1000,
+    delay: 150,
+    distance: "20px",
+    scale: 1,
+    easing: "ease",
+  };
+
+  let config2 = {
+    origin: "bottom",
+    duration: 1000,
+    delay: 150,
+    distance: "20px",
+    scale: 1,
+    easing: "ease",
+  };
+
+  const config3 = {
+    origin: "left",
+    duration: 1000,
+    delay: 150,
+    distance: "20px",
+    scale: 1,
+    easing: "ease",
+  };
+
+  useEffect(()=>{
+      ScrollReveal().reveal('.home-left-container', config1)
+      ScrollReveal().reveal('.home-right-container', config2)
+      ScrollReveal().reveal('.skills', config3)
+      
+  }, [])
+
   return (
     <section className='home-section' id='home'>
         <div className="home-container">
