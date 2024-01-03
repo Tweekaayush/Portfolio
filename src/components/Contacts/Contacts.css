@@ -1,0 +1,30 @@
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    margin: 0 32px;
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container h1{
+    align-self: center;
+}
+
+.contact-container h1 span{
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 1074px) {
+}
+
+@media screen and (max-width: 680px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+}
