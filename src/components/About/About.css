@@ -51,8 +51,8 @@
     height: 150px;
     width: 150px;
     position: relative;
-    animation: spin
-     8s linear infinite;
+    animation: spin 8s linear infinite;
+     border-radius: 50%;
 }
 
 
@@ -107,34 +107,36 @@
     }
 
     .about-img-container{
-        width: 250px;
-        height: 250px;
+        width: 225px;
+        height: 225px;
     }
     
     .about-circle{
-        width: 125px;
-        height: 125px;
+        width: 110px;
+        height: 110px;
+        bottom: -25px;
+        right: -25px;
     }
 
     .about-circle > p{
-        height: 125px;
-        width: 125px;
+        height: 110px;
+        width: 110px;
         position: relative;
-        animation: spin
-         8s linear infinite;
+        animation: spin 8s linear infinite;
+        font-size: 12px;
     }
     .about-circle > p span{
-        transform-origin: 0 63px;
+        transform-origin: 0 55px;
         text-transform: uppercase;
         color: var(--text-color);
     }
     .about-circle > p img{
         position: absolute;
-        top: 40px;
-        left: 40px;
+        top: 35px;
+        left: 35px;
         margin: auto;
-        height: 43px;
-        width: 43px;
+        height: 40px;
+        width: 40px;
         animation: reverse-spin 8s linear infinite;
     }    
 }

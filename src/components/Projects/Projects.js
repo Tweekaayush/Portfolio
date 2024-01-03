@@ -1,10 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Projects.css'
 import Card from '../Card/Card'
 import projects from '../../projectlist'
 import ScrollReveal from 'scrollreveal'
 
+
 const Projects = () => {
+
+  const [projectArray, setProjectArray] = useState(projects)
+  const all = useRef(null)
+  const vanilla = useRef(null)
+  const react = useRef(null)
+
   const config1 = {
     origin: "top",
     duration: 1000,
@@ -32,22 +39,62 @@ const Projects = () => {
     easing: "ease",
   };
 
+  const createProjectCard = (item, i) =>{  
+    return <Card id={item.id} key={item.id} {...item}/>
+  }
+
+  const search = (ch, list) =>{
+    for(let i of list){
+      if(i === ch)
+        return true
+    }
+    return false
+  }
+
+  const switchList = (e) =>{
+
+    if(e === 'vanilla'){
+      all.current.classList.remove('active-btn')
+      vanilla.current.classList.add('active-btn')
+      react.current.classList.remove('active-btn')
+    }else if(e === 'react'){
+      all.current.classList.remove('active-btn')
+      vanilla.current.classList.remove('active-btn')
+      react.current.classList.add('active-btn')
+    }else{
+      all.current.classList.add('active-btn')
+      vanilla.current.classList.remove('active-btn')
+      react.current.classList.remove('active-btn')
+    }
+
+    let newArr = projects.filter((item)=>{
+      return search(e, item.type)
+    })
+
+    setProjectArray(newArr) 
+  }
+
   useEffect(()=>{
     ScrollReveal().reveal('.projects-container h1', config1)
     ScrollReveal().reveal('.projects-container h2', config3)
     ScrollReveal().reveal('.projects-grid', config2)
   }, [])
-  
+
   return (
     <section className="projects-section" id="projects">
         <div className="projects-container">
             <h1 className="section-heading">Port<span>folio</span></h1>
             <h2 className='sub-heading'>Each project is a unique piece of development.</h2>
+
+            <div className='projects-button'>
+              <button ref={all} className='active-btn' onClick={()=>switchList('all')}>All</button>
+              <button ref={vanilla} onClick={()=>switchList('vanilla')}>Html/Css/Js</button>
+              <button ref={react} onClick={()=>switchList('react')}>React</button>
+            </div>
+
             <div className="projects-grid">
               {
-                projects.map((card, i)=>{
-                   return <Card id={i} key={i} {...card}/>
-                })
+                projectArray.map(createProjectCard)
               }
             </div>
         </div>

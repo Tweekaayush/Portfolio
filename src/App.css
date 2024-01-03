@@ -108,10 +108,11 @@ section:nth-child(even){
   color: var(--white-color);
   font-size: 18px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .section-btn:hover:before{
-  transform: translateX(100%) rotate(-45deg);
+  transform: translateX(100%) rotate(-75deg);
 }
 
 .section-btn:before{

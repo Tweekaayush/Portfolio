@@ -58,6 +58,7 @@
     transform: scale(1);
     transition-delay: 0.2s;
     opacity: 1;    
+    padding: 16px;
 }
 
 .card:before{

@@ -55,10 +55,6 @@
     display: flex;
 }
 
-.home-buttons a{
-    text-decoration: none;
-}
-
 .home-buttons a:nth-child(2){
     font-weight: 900;
     border: none;

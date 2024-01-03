@@ -3,6 +3,7 @@
     width: 990px;
     display: flex;
     flex-direction: column;
+    align-self: start;
 }
 
 .projects-container > h1{
@@ -26,6 +27,36 @@
     height: 240px;
 }
 
+.projects-button{
+    margin-top: 16px;
+    border: 1px solid var(--shadow-color);
+    align-self: start;
+    border-radius: 10px;
+}
+
+.projects-button button{
+    padding: 12px 24px;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    border-right: 1px solid var(--shadow-color);
+    transition: all 0.3s;
+    background-color: var(--nav-list-color);
+}
+
+.projects-button button:nth-child(1){
+    border-radius: 9px 0 0 9px ;
+}
+
+.projects-button button:nth-child(3){
+    border-radius: 0 9px 9px 0 ;
+    border: none;
+}
+
+.active-btn{
+    background-color: var(--main-color) !important;
+    color: var(--white-color);
+}
+
 @media screen and (max-width: 1074px) {
     .projects-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -35,6 +66,10 @@
     .projects-container > h1, .projects-container > h2{
         align-self: center;
         text-align: center;
+    }
+
+    .projects-button{
+        align-self: center;
     }
 }
 
