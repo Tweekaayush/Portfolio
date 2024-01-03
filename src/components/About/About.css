@@ -10,10 +10,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
-
 .about-right-container{
-    order: 1;
+    flex: 1.5;
 }
 
 .about-right-container h1 span{
@@ -25,6 +25,55 @@
 }
 
 
+.about-img-container{
+    background: url('../../assets/images/computer1.jpg');
+    background-repeat: no-repeat;
+    background-position: 25%;
+    background-size: cover;
+    border-radius: 10px;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.about-circle{
+    position: absolute;
+    background-color: var(--white-color);
+    bottom: -35px;
+    right: -35px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.about-circle > p{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    animation: spin
+     8s linear infinite;
+}
+
+
+.about-circle > p img{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    animation: reverse-spin 8s linear infinite;
+}
+
+.about-circle > p span{
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 75px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
 @media screen and (max-width: 1074px) {
 
     .about-container{
@@ -32,7 +81,8 @@
     }
 
     .about-left-container{
-        order: 2;
+        align-items: center;
+        margin-bottom: 40px;
     }
 
     .about-sub-heading{
@@ -54,5 +104,55 @@
 @media screen and (max-width: 480px) {
     .about-sub-heading{
         font-size: 18px;
+    }
+
+    .about-img-container{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-circle{
+        width: 125px;
+        height: 125px;
+    }
+
+    .about-circle > p{
+        height: 125px;
+        width: 125px;
+        position: relative;
+        animation: spin
+         8s linear infinite;
+    }
+    .about-circle > p span{
+        transform-origin: 0 63px;
+        text-transform: uppercase;
+        color: var(--text-color);
+    }
+    .about-circle > p img{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        margin: auto;
+        height: 43px;
+        width: 43px;
+        animation: reverse-spin 8s linear infinite;
+    }    
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverse-spin {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }

@@ -26,7 +26,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="home-buttons">
-                        <a href='#contact' className='home-btn section-btn'>hire me</a>
+                        <a href='#contact' className='section-btn'>hire me</a>
                         <a href='#projects'>view my projects <FontAwesomeIcon className='arrow' icon={faArrowRight} /></a>
                     </div>
                 </div>

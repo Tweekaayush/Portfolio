@@ -61,5 +61,6 @@ input[type=submit]:hover{
 
     input[type=submit]{
         font-size: 15px;
+        padding: 16px 20px;
     }
 }

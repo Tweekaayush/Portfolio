@@ -64,7 +64,7 @@ const Navbar = () => {
       </a>
       <ul className={toggle?"nav-links nav-active":"nav-links"}>
         <li className="nav-item" onClick={resetNav}>
-          <a href="#home" >Home</a>
+          <a href="#home" className='nav-item-active'>Home</a>
         </li>
         <li className="nav-item" onClick={resetNav}>
           <a href="#about">About</a>

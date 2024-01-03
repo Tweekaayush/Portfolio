@@ -1,5 +1,8 @@
 import React from 'react'
 import './Card.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+
 
 const Card = (props) => {
   return (
@@ -7,8 +10,8 @@ const Card = (props) => {
         <img src={props.img} alt="" />
         <div className="card-content">
             <h1>{props.title}</h1>
-            <p>{props.description}</p>
-            <a href={props.link}>visit</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.</p>
+            <a href={props.link}>visit website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
     </div>
   )
