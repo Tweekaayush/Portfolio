@@ -32,8 +32,8 @@
     background-size: cover;
     border-radius: 10px;
     justify-self: center;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 325px;
     position: relative;
 }
 
@@ -107,7 +107,7 @@
     }
 
     .about-img-container{
-        width: 225px;
+        width: 250px;
         height: 225px;
     }
     

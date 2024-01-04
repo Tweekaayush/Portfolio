@@ -56,7 +56,7 @@ const About = () => {
             <div className="about-right-container">
               <h1 className="section-heading">About <span>Me</span></h1>
               <h2 className='sub-heading'>A passionate Front-end Developer
-based in Delhi NCR, India.</h2>
+based in Delhi NCR, India</h2>
               <p className="body-text">
                 I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. With a toolbox filled with React, HTML, CSS, and JavaScript, I thrive on turning design concepts into seamless and interactive web experiences. 
               </p>

@@ -35,12 +35,12 @@
 }
 
 .card:hover:before{
-    transform: translateY(-50%);
+    transform: translateY(0);
     transition-delay: 0s;
 }
 
 .card:hover:after{
-    transform: translateY(50%);
+    transform: translateY(0);
     transition-delay: 0s;
 }
 

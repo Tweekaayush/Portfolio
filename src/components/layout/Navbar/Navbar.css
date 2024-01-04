@@ -20,6 +20,10 @@
     color: var(--main-color);
 }
 
+.nav-brand span{
+    color: var(--dark-color);
+}
+
 /*----------------------------- Nav Links -----------------------------*/
 
 .nav-links{

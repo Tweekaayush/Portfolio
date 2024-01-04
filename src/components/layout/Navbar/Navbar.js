@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <nav className={scroll?'navbar scrolled':'navbar'}>
       <a href="/" className="nav-brand">
-        Aayush
+        Aay<span>ush</span>
       </a>
       <ul className={toggle?"nav-links nav-active":"nav-links"}>
         <li className="nav-item" onClick={resetNav}>
