@@ -1,6 +1,7 @@
 import todolist from "./assets/images/todolist.png";
 import weatherApp from "./assets/images/weatherApp.png";
 import patatap from "./assets/images/patatap.png"
+import hairday from './assets/images/Hairday.png'
 
 const projects = [
     {
@@ -23,6 +24,13 @@ const projects = [
         title:"Weather App",
         link:"https://tweekaayush.github.io/weather-app-react/",
         type: ['all', 'react']
+    },
+    {
+        id: 4,
+        img: hairday,
+        title: 'Hair Day',
+        link: '',
+        type: ['all', 'vanilla']
     }
 ]
 
