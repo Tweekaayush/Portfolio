@@ -53,7 +53,9 @@ const Home = () => {
                 <div className="home-left-container">
                     <p className='body-text'>Hi, I'm</p>
                     <h1 className='home-heading'>Aayush <span>Dobriyal</span></h1>
-                    <p className='body-text'>I’ m a passionate Front-end Developer based in Delhi NCR, India.  I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+                    <p className='body-text'>
+                        I’ m a Front-end Developer with a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                    </p>
                     <div className="home-links svg-links">
                         <a href="" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} />

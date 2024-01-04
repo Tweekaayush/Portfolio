@@ -75,11 +75,13 @@ const Navbar = () => {
         <li className="nav-item" onClick={resetNav}>
           <a href="#contact">Contact</a>
         </li>
+
         {/* <li className="nav-item" onClick={changeTheme}>
           {
             theme ? <FontAwesomeIcon className='theme' icon={faSun} /> : <FontAwesomeIcon className='theme' icon={faMoon} />
           }
         </li> */}
+        
       </ul>
       <div className={toggle?"nav-toggler toggle":"nav-toggler"} onClick={()=>setToggle(!toggle)}>
         <div className="line1"></div>

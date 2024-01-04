@@ -76,8 +76,9 @@ const Projects = () => {
 
   useEffect(()=>{
     ScrollReveal().reveal('.projects-container h1', config1)
-    ScrollReveal().reveal('.projects-container h2', config3)
     ScrollReveal().reveal('.projects-grid', config2)
+    ScrollReveal().reveal('.projects-container h2', config3)
+    ScrollReveal().reveal('.projects-button', config3)
   }, [])
 
   return (
@@ -88,7 +89,7 @@ const Projects = () => {
 
             <div className='projects-button'>
               <button ref={all} className='active-btn' onClick={()=>switchList('all')}>All</button>
-              <button ref={vanilla} onClick={()=>switchList('vanilla')}>Html/Css/Js</button>
+              <button ref={vanilla} onClick={()=>switchList('vanilla')}>Html / Css / Js</button>
               <button ref={react} onClick={()=>switchList('react')}>React</button>
             </div>
 
