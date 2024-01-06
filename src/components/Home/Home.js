@@ -38,12 +38,11 @@ const Home = () => {
     scale: 1,
     easing: "ease",
   };
-
+  
   useEffect(()=>{
-      ScrollReveal().reveal('.home-left-container', config1)
-      ScrollReveal().reveal('.home-right-container', config2)
-      ScrollReveal().reveal('.skills', config3)
-      
+    ScrollReveal().reveal('.home-left-container', config1)
+    ScrollReveal().reveal('.home-right-container', config2)
+    ScrollReveal().reveal('.skills', config3)
   }, [])
 
   return (
@@ -57,10 +56,10 @@ const Home = () => {
                         I’ m a Front-end Developer with a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
                     </p>
                     <div className="home-links svg-links">
-                        <a href="" target="_blank">
+                        <a href="/" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a href="" target="_blank">
+                        <a href="/" target="_blank">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
