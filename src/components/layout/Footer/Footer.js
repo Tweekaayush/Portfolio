@@ -22,7 +22,7 @@ const Footer = () => {
             </a>
             <div className="footer-content">
                 <p className="copyright">
-                    Copyright &copy; {date}. All rights are reserved
+                    &copy; {date} Aayush Dobriyal.
                 </p>
                 <div className="footer-links svg-links">
                     <a href="" target='_blank'>

@@ -39,6 +39,24 @@
 
 html{
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px var(--overlay-color-1);
+	background-color: var(--bg-color-2);
+}
+
+html::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: var(--bg-color-2);
+}
+
+html::-webkit-scrollbar-thumb
+{
+	background-color: var(--main-color);
 }
 
 /*----------------------------- section -----------------------------*/
@@ -50,7 +68,7 @@ section{
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 64px 0;
+  padding:32px 0;
 }
 
 section:nth-child(odd){
@@ -86,7 +104,7 @@ section:nth-child(even){
 }
 
 .svg-links a{
-  font-size: 20px;
+  font-size: 24px;
   margin: 32px 0;
   text-decoration: none !important;
   transition: all 0.3s;
@@ -106,7 +124,7 @@ section:nth-child(even){
   font-weight: 500;
   background-color: var(--main-color);
   color: var(--white-color);
-  font-size: 18px;
+  font-size: 20px;
   overflow: hidden;
   text-decoration: none;
 }

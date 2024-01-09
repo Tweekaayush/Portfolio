@@ -82,8 +82,8 @@
     box-shadow: inset 0 0 0 5px var(--main-color);
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     justify-self: center;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
@@ -101,7 +101,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--dark-color);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .skills-list{
@@ -111,8 +111,8 @@
 }
 
 .skills-list li img{
-    height: 40px;
-    width: 40px;
+    height: 49px;
+    width: 49px;
     margin: 0 64px 0 0;
     transition: all 0.3s;
 }

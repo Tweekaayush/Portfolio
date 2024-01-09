@@ -1,3 +1,7 @@
+.about-section{
+min-height: 70vh;
+}
+
 .about-container{
     margin: 0 32px;
     width: 990px;
