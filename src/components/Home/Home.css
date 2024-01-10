@@ -1,5 +1,5 @@
 .home-section{
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .home-container{
@@ -32,7 +32,7 @@
 }
 
 .home-heading{
-    font-size: 50px;
+    font-size: 55px;
     font-family: Poppins, sans-serif;
     font-weight: 700;
     color: var(--dark-color);

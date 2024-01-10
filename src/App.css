@@ -63,12 +63,12 @@ html::-webkit-scrollbar-thumb
 
 section{
   position: relative;
-  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding:32px 0;
+  padding: 150px 0;
+  min-height: 85vh;
 }
 
 section:nth-child(odd){
