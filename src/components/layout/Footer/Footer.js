@@ -6,11 +6,13 @@ import './Footer.css'
 
 const Footer = () => {
 
-  const [date, setDate] = useState(new Date().getFullYear()) 
-  
-  useEffect(()=>{
-    setDate(new Date().getFullYear())
-  }, [])
+    const [date , setDate] = useState();
+
+    const getYear = () =>  setDate(new Date().getFullYear())
+
+    useEffect(() => {
+        getYear();
+    }, [])
 
   return (
     <footer className='footer'>

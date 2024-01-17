@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 import './Navbar.css'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {faSun, faMoon} from '@fortawesome/free-regular-svg-icons'
@@ -10,7 +10,7 @@ const Navbar = () => {
   // const [theme, setTheme] = useState(false)
   let resizeTimer
 
-  window.addEventListener("scroll", ()=>{
+  const handleScroll = () =>{
     let sections = document.querySelectorAll('section')
     let links = document.querySelectorAll('nav ul li a')
 
@@ -32,17 +32,17 @@ const Navbar = () => {
         document.querySelector('nav ul li a[href*='+id+']').classList.add('nav-item-active')
       }
     })
-  });
-  
-  window.addEventListener("resize", ()=>{
+  }
+
+  const handleResize = () =>{
     if(document.body.clientWidth>1074)
-        setToggle(false)
-           document.body.classList.add("resize-animation-stopper");
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          document.body.classList.remove("resize-animation-stopper");
-        }, 400);
-  });
+    setToggle(false)
+       document.body.classList.add("resize-animation-stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.body.classList.remove("resize-animation-stopper");
+    }, 400);
+  }
 
   const resetNav = () =>{
     setToggle(false)
@@ -56,6 +56,19 @@ const Navbar = () => {
   //   }
   //   setTheme(!theme)
   // }
+
+
+  useEffect(()=>{
+    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("resize", handleResize)
+    
+    return ()=>{
+      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", handleResize)
+    }
+
+  }, [])
+
 
   return (
     <nav className={scroll?'navbar scrolled':'navbar'}>
