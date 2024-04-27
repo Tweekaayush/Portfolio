@@ -10,7 +10,7 @@ const Card = (props) => {
         <img src={props.img} alt="" />
         <div className="card-content">
             <h1>{props.title}</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.</p>
+            <p>{props.description}</p>
             <a href={props.link} target='_blank'>visit website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
     </div>
