@@ -1,6 +1,6 @@
 import todolist from "./assets/images/todolist.png";
 import weatherApp from "./assets/images/weatherApp.png";
-import hairday from './assets/images/Hairday.png'
+import disney from './assets/images/disney.png'
 import cryptoverse from './assets/images/cryptoverse.png'
 import ecommerce from './assets/images/ecommerce.png'
 
@@ -30,11 +30,11 @@ const projects = [
     },
     {
         id: 4,
-        img: hairday,
-        title: 'Hair Day',
+        img: disney,
+        title: 'Disney+ Clone',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.',
-        link: 'https://tweekaayush.github.io/StartUp-Landing-Page-Hair-Day-/',
-        type: ['all', 'vanilla']
+        link: 'https://disneyplusclonead.vercel.app/home',
+        type: ['all', 'react']
     }
 ]
 
