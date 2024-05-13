@@ -1,4 +1,3 @@
-import todolist from "./assets/images/todolist.png";
 import weatherApp from "./assets/images/weatherApp.png";
 import disney from './assets/images/disney.png'
 import cryptoverse from './assets/images/cryptoverse.png'
@@ -9,14 +8,14 @@ const projects = [
         id: 1,
         img: ecommerce,
         title:"Ecommerce",
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.',
+        description: 'A fully interactive and responsive Ecommerce web application providing CRUD operations using ReactJs, Redux Toolkit and Firebase.',
         link:"https://ecommercead.vercel.app",
         type: ['all', 'react']
     },{
         id: 2,
         img: cryptoverse,
         title: 'Cryptoverse',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.',
+        description: 'A cryptocurrency tracking app that provides the current rates of all known cryptocurrencies.',
         link: 'https://cryptoversead.vercel.app',
         type: ['all', 'react'],
     },
@@ -24,7 +23,7 @@ const projects = [
         id:3,
         img: weatherApp,
         title:"Weather App",
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.',
+        description: 'A weather app that displays the weather conditions of the desired location using REST API.',
         link:"https://weatherly-zeta.vercel.app",
         type: ['all', 'react']
     },
@@ -32,7 +31,7 @@ const projects = [
         id: 4,
         img: disney,
         title: 'Disney+ Clone',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, impedit.',
+        description: 'A fully interactive and responsive multi-page Disney-plus clone using ReactJs, Redux Toolkit and Firebase.',
         link: 'https://disneyplusclonead.vercel.app/home',
         type: ['all', 'react']
     }

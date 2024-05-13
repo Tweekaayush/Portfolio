@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './About.css'
 import imgs from '../../assets/Tech/React.png'
 import ScrollReveal from 'scrollreveal'
+import resume from '../../assets/resume/Resume.pdf'
 
 const About = () => {
   let arr = Array.from('Front-End Developer')
@@ -60,7 +61,7 @@ based in Delhi NCR, India</h2>
               <p className="body-text">
                 I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. With a toolbox filled with React, HTML, CSS, and JavaScript, I thrive on turning design concepts into seamless and interactive web experiences. 
               </p>
-              <a className='section-btn' href="" download="Resume">Download CV</a>
+              <a className='section-btn' href={resume} download="Aayush's Resume">Download CV</a>
             </div>
         </div>
     </section>

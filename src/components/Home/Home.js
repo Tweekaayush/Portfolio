@@ -7,6 +7,7 @@ import html from '../../assets/Tech/HTML5.png'
 import css from '../../assets/Tech/CSS3.png'
 import js from '../../assets/Tech/JavaScript.png'
 import react from '../../assets/Tech/React.png'
+import redux from '../../assets/Tech/redux.png'
 import ScrollReveal from 'scrollreveal'
 
 
@@ -86,6 +87,9 @@ const Home = () => {
                     </li>
                     <li>
                         <img className='tech-icons' src={react} alt='react'/>
+                    </li>
+                    <li>
+                        <img className='tech-icons' src={redux} alt='react'/>
                     </li>
                 </ul>
             </div>
