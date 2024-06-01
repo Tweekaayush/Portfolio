@@ -57,10 +57,10 @@ const Home = () => {
                         I’ m a Front-end Developer with a serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
                     </p>
                     <div className="home-links svg-links">
-                        <a href="/" target="_blank">
+                        <a href="https://in.linkedin.com/in/aayush-dobriyal-896217192?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a href="/" target="_blank">
+                        <a href="https://github.com/Tweekaayush" target="_blank">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
