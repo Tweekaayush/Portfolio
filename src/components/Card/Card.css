@@ -4,7 +4,7 @@
     box-shadow: var(--shadow-color) 0px 1px 2px 0px, var(--shadow-color) 0px 2px 6px 2px;
     position: relative;
     overflow: hidden;
-    height: 280px;
+    max-height: 280px;
     transition: all 0.3s;
 }
 
@@ -47,6 +47,7 @@
 .card img{
     width: 100%;
     border-radius: 5px;
+    object-fit: contain;
 }
 
 .card-content{

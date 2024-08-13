@@ -7,7 +7,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 const Card = (props) => {
   return (
     <div className="card">
-        <img src={props.img} alt="" />
+        <img src={props.img} alt={props.title} />
         <div className="card-content">
             <h1>{props.title}</h1>
             <p>{props.description}</p>

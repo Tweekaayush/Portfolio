@@ -2,6 +2,7 @@ import weatherApp from "./assets/images/weatherApp.png";
 import disney from './assets/images/disney.png'
 import cryptoverse from './assets/images/cryptoverse.png'
 import ecommerce from './assets/images/ecommerce.png'
+import dashboard from './assets/images/dashboard.png'
 
 const projects = [
     {
@@ -33,6 +34,14 @@ const projects = [
         title: 'Disney+ Clone',
         description: 'A fully interactive and responsive multi-page Disney-plus clone using ReactJs, Redux Toolkit and Firebase.',
         link: 'https://disneyplusclonead.vercel.app/home',
+        type: ['all', 'react']
+    },
+    {
+        id: 5,
+        img: dashboard,
+        title: 'Admin Dashboard',
+        description: 'A fully interactive and responsive Admin Dashboard using ReactJs, Redux Toolkit.',
+        link: 'https://dashboard-react-ad.vercel.app',
         type: ['all', 'react']
     }
 ]
