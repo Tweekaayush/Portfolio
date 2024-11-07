@@ -9,8 +9,8 @@ const projects = [
         id: 1,
         img: ecommerce,
         title:"Ecommerce",
-        description: 'A fully interactive and responsive Ecommerce web application providing CRUD operations using ReactJs, Redux Toolkit, Firebase, Node, Express, Stripe.',
-        link:"https://ecommerce-chi-navy.vercel.app",
+        description: 'A fully interactive and responsive Ecommerce web application providing CRUD operations using ReactJs, Redux Toolkit, Firebase and also added payment gateway using Stripe.',
+        link:"https://ecommercead.vercel.app",
         type: ['all', 'react']
     },{
         id: 2,
