@@ -6,6 +6,8 @@
     overflow: hidden;
     max-height: 280px;
     transition: all 0.3s;
+    margin: auto;
+    aspect-ratio: 16/9;
 }
 
 .card:before{
