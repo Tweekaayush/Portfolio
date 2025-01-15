@@ -13,7 +13,16 @@ const projects = [
         description: 'A fully interactive and responsive Ecommerce web application providing CRUD operations using ReactJs, Redux Toolkit, Firebase and also added payment gateway using Stripe.',
         link:"https://ecommercead.vercel.app",
         type: ['all', 'react']
-    },{
+    },
+    {
+        id: 6,
+        img: chatApp,
+        title: 'Realtime Chat App',
+        description: 'A fully interactive Realtime Chap App using ReactJs, Redux Toolkit and Firebase.',
+        link: 'https://chat-app-zeta-red.vercel.app',
+        type: ['all', 'react']
+    },
+    {
         id: 2,
         img: cryptoverse,
         title: 'Cryptoverse',
@@ -32,7 +41,7 @@ const projects = [
     {
         id: 4,
         img: disney,
-        title: 'Disney+ Clone',
+        title: 'Disney+ (UI Clone)',
         description: 'A fully interactive and responsive multi-page Disney-plus clone using ReactJs, Redux Toolkit and Firebase.',
         link: 'https://disneyplusclonead.vercel.app/home',
         type: ['all', 'react']
@@ -43,14 +52,6 @@ const projects = [
         title: 'Admin Dashboard',
         description: 'A fully interactive and responsive Admin Dashboard using ReactJs, Redux Toolkit.',
         link: 'https://dashboard-react-ad.vercel.app',
-        type: ['all', 'react']
-    },
-    {
-        id: 6,
-        img: chatApp,
-        title: 'Realtime Chat App',
-        description: 'A fully interactive Realtime Chap App using ReactJs, Redux Toolkit and Firebase.',
-        link: 'https://chat-app-react-tau.vercel.app',
         type: ['all', 'react']
     }
 ]

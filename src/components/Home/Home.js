@@ -9,7 +9,7 @@ import js from '../../assets/Tech/JavaScript.png'
 import react from '../../assets/Tech/React.png'
 import redux from '../../assets/Tech/redux.png'
 import ScrollReveal from 'scrollreveal'
-
+import bootstrap from '../../assets/Tech/bootstrap.png'
 
 const Home = () => {
 
@@ -89,7 +89,10 @@ const Home = () => {
                         <img className='tech-icons' src={react} alt='react'/>
                     </li>
                     <li>
-                        <img className='tech-icons' src={redux} alt='react'/>
+                        <img className='tech-icons' src={redux} alt='redux'/>
+                    </li>
+                    <li>
+                        <img className='tech-icons' src={bootstrap} alt='bootstrap'/>
                     </li>
                 </ul>
             </div>

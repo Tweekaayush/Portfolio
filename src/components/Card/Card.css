@@ -101,3 +101,13 @@
     opacity: 1;    
     padding: 16px;
 }
+
+.ellipses{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  

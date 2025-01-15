@@ -102,18 +102,23 @@
     letter-spacing: 1px;
     color: var(--dark-color);
     font-size: 24px;
+    margin: 0;
 }
 
 .skills-list{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
     margin: 0 0 0 64px;
+    padding: 0;
 }
 
 .skills-list li img{
     height: 49px;
     width: 49px;
-    margin: 0 64px 0 0;
     transition: all 0.3s;
 }
 
@@ -159,7 +164,6 @@
     .skills li img{
         height: 35px;
         width: 35px;
-        margin: 0 32px 0 0;
     }
 }
 
@@ -183,14 +187,9 @@
         padding: 10px 24px 10px 0;
     }
 
-    .skills-list{
-        margin: 0 0 0 24px;
-    }
-
     .skills li img{
         height: 30px;
         width: 30px;
-        margin: 0 24px 0 0;
     }
 }
 
@@ -222,13 +221,11 @@
 
     .skills-list{
         margin: 18px 0 0 0;
-        align-self: center;
     }
 
     .skills li img{
         height: 30px;
         width: 30px;
-        margin: 0 16px;
     }
 }
 

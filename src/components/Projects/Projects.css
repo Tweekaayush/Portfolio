@@ -1,5 +1,5 @@
 .projects-container{
-    margin: 0 32px;
+    margin: 0 32px !important;
     width: 990px;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,7 @@
 }
 
 .projects-grid{
+    align-self: center;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
@@ -21,10 +22,6 @@
     margin: 32px 0 0 0;
 }
 
-.project{
-    background-color: var(--main-color);
-    height: 240px;
-}
 
 .projects-button{
     margin-top: 16px;
@@ -47,6 +44,16 @@
     background-color: var(--main-color) !important;
     color: var(--white-color);
 }
+
+.page-item > a{
+    color: var(--main-color) !important;
+}
+
+.active span{
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
 
 @media screen and (max-width: 1074px) {
     .projects-grid{
@@ -71,4 +78,8 @@
 }
 
 @media screen and (max-width: 480px) {
+    .projects-button button{
+        padding: 8px 16px;
+    }
+
 }

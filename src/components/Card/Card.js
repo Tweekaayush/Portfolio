@@ -10,7 +10,7 @@ const Card = (props) => {
         <img src={props.img} alt={props.title} />
         <div className="card-content">
             <h1>{props.title}</h1>
-            <p>{props.description}</p>
+            <p className=''>{props.description}</p>
             <a href={props.link} target='_blank'>visit website <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>
     </div>
