@@ -3,6 +3,7 @@ import './Projects.css'
 import Card from '../Card/Card'
 import projects from '../../projectlist'
 import ScrollReveal from 'scrollreveal'
+import Pagination from '../Pagination/Pagination'
 
 
 const Projects = () => {
@@ -11,6 +12,8 @@ const Projects = () => {
   const all = useRef(null)
   const vanilla = useRef(null)
   const react = useRef(null)
+  const [pageNo, setPageNo] = useState(1)
+  const paginate = 4
 
   const config1 = {
     origin: "top",
@@ -72,6 +75,7 @@ const Projects = () => {
     })
 
     setProjectArray(newArr) 
+    setPageNo(1)
   }
 
   useEffect(()=>{
@@ -95,9 +99,10 @@ const Projects = () => {
 
             <div className="projects-grid">
               {
-                projectArray.map(createProjectCard)
+                projectArray.slice((pageNo-1) * paginate, pageNo*paginate).map(createProjectCard)
               }
             </div>
+            <Pagination pageNo={pageNo} setPageNo={setPageNo} totalPages={Math.ceil(projectArray.length/paginate)}/>
         </div>
     </section>
   )

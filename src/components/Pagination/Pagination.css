@@ -1,0 +1,33 @@
+.pagination-container{
+    padding: 32px 16px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.pagination-btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-btn:disabled{
+    border-color: var(--disabled) !important;
+    color: var(--disabled) !important;
+}
+
+.pagination-btn-active{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 480px) {
+    .pagination-btn{
+        width: 30px;
+        height: 30px;
+    }
+}

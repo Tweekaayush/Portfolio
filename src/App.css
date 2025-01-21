@@ -18,19 +18,7 @@
   --dark-color: #2d2e32;
   --underline-color: #ffd747;
   --shadow-color: #0000004d;
-}
-
-.dark-theme{
-  --nav-list-color: #111111;
-  --bg-color1: #060606;
-  --bg-color2: #000000;
-  --text-color: #cccccc;
-  --main-color: #754ef9;
-  --main-color-low-opacity: #764ef990;
-  --white-color: #fff;
-  --dark-color: #d2d1cd;
-  --underline-color: #ffc800;
-  --shadow-color: rgba(255, 255, 255, 0.3);
+  --disabled: rgb(189, 189, 189);
 }
 
 .resize-animation-stopper * {
