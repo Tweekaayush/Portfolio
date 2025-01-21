@@ -139,7 +139,7 @@ section:nth-child(even){
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 200%;
     background-color: var(--underline-color);
     transform-origin: center;
     transform: translateX(-100%) rotate(-45deg);
