@@ -90,13 +90,6 @@ const Projects = () => {
         <div className="projects-container">
             <h1 className="section-heading">Port<span>folio</span></h1>
             <h2 className='sub-heading'>Each project is a unique piece of development</h2>
-
-            <div className='projects-button'>
-              <button ref={all} className='active-btn' onClick={()=>switchList('all')}>All</button>
-              <button ref={vanilla} onClick={()=>switchList('vanilla')}>Html / Css / Js</button>
-              <button ref={react} onClick={()=>switchList('react')}>React</button>
-            </div>
-
             <div className="projects-grid">
               {
                 projectArray.slice((pageNo-1) * paginate, pageNo*paginate).map(createProjectCard)

@@ -1,103 +1,119 @@
-.card{
-    background-color: var(--nav-list-color);
-    border-radius: 10px;
-    box-shadow: var(--shadow-color) 0px 1px 2px 0px, var(--shadow-color) 0px 2px 6px 2px;
-    position: relative;
-    overflow: hidden;
-    max-height: 280px;
-    transition: all 0.3s;
-    margin: auto;
-    aspect-ratio: 16/9;
+.card {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: var(--shadow-color) 0px 1px 2px 0px,
+    var(--shadow-color) 0px 2px 6px 2px;
+  overflow: hidden;
+  background-color: var(--bg-color1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.card:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--main-color-low-opacity);
-    height: 100%;
-    width: 100%;
-    transform: translateY(-100%);
-    transition: all 0.3s;
-    transition-delay: 0.3s;
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: var(--shadow-color) 0px 1px 15px 1px,
+    var(--shadow-color) 0px 2px 15px 1px;
 }
 
-.card:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--main-color-low-opacity);
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition: all 0.3s;
-    transition-delay: 0.3s;
+.card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
 }
 
-.card:hover:before{
-    transform: translateY(0);
-    transition-delay: 0s;
+.card-img > img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center center;
 }
 
-.card:hover:after{
-    transform: translateY(0);
-    transition-delay: 0s;
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
-.card img{
-    width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+.card-content > h1 {
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
-.card-content{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--white-color);
-    transform: scale(5);
-    opacity: 0;
-    transition: all 0.3s;
-    text-align: center;
-    z-index: 1;
+.card-content > p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  flex: 1;
 }
 
-.card-content h1{
-    font-size: 24px;
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+.card-content > a {
+  text-decoration: none;
+  color: var(--white-color);
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  padding: 8px 24px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  margin-top: 8px;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
 }
 
-.card-content p{
+.card-content > a:hover {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+.card-content > a > svg{
+    width: 16px;
+    height: 16px;
+}
+
+.project-tech-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.project-tech-stack > li {
+  border: 1px solid var(--main-color);
+  font-size: 14px;
+  padding: 4px 16px;
+  color: var(--main-color);
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  .card-content > h1 {
+    font-size: 20px;
+  }
+
+  .card-content > p {
+    font-size: 12px;
+  }
+
+  .card-content > a {
     font-size: 14px;
-    letter-spacing: 1px;
-}
+  }
 
-.card-content a{
-    text-decoration: none;
-    color: var(--white-color) !important;
-    border: 2px solid var(--white-color);
-    padding: 8px 24px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    margin-top: 8px;
-    font-size: 18px;
-    font-weight: 900;
+  .project-tech-stack > li {
+    font-size: 12px;
+  }
+  
+  .card-content > a > svg{
+    width: 14px;
+    height: 14px;
 }
-
-.card:hover > .card-content{
-    transform: scale(1);
-    transition-delay: 0.3s;
-    opacity: 1;    
-    padding: 16px;
 }

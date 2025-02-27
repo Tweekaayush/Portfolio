@@ -154,7 +154,7 @@ section:nth-child(even){
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
 
   .home-container, .about-container, .projects-container, .contact-container, .footer-container{
     margin: 0 24px !important;
@@ -176,7 +176,7 @@ section:nth-child(even){
 
 @media screen and (max-width: 480px) {
   .body-text{
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .section-btn{
