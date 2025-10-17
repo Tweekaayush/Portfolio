@@ -11,8 +11,8 @@ const projects = [
         img: ecommerce,
         title:"Ecommerce",
         description: 'A fully interactive and responsive MERN Stack Ecommerce web application providing CRUD operations and payment gateway using Stripe.',
-        link:"https://primartad.vercel.app",
-        tech: ['MongoDb', 'ExpressJs', 'React', 'NodeJs', 'Redux Toolkit']
+        link:"https://ecommerce-xwc7.onrender.com",
+        tech: ['MongoDb', 'ExpressJs', 'React', 'NodeJs', 'Redux Toolkit', 'Tailwind']
     },
     {
         id: 6,
