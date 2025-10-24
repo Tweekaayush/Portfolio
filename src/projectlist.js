@@ -35,8 +35,8 @@ const projects = [
         img: weatherApp,
         title:"Weather App",
         description: 'A weather app that displays the weather conditions of the desired location using REST API.',
-        link:"https://weatherly-zeta.vercel.app",
-        tech: ['React', 'Redux Toolkit']
+        link:"https://weather-app-2-0-eta.vercel.app",
+        tech: ['React', 'Redux Toolkit', 'Tailwind']
     },
     {
         id: 4,
