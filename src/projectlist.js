@@ -11,7 +11,7 @@ const projects = [
         img: ecommerce,
         title:"Ecommerce",
         description: 'A fully interactive and responsive MERN Stack Ecommerce web application providing CRUD operations and payment gateway using Stripe.',
-        link:"https://primart-client.vercel.app",
+        link:"https://ecommerce-1-81ln.onrender.com",
         tech: ['MongoDb', 'ExpressJs', 'React', 'NodeJs', 'Redux Toolkit', 'Tailwind']
     },
     {
@@ -19,8 +19,8 @@ const projects = [
         img: chatApp,
         title: 'Realtime Chat App',
         description: 'A fully interactive Realtime MERN Stack Chat App with realtime chat feature using Socket IO.',
-        link: 'https://chat-app-mern-frontend-mocha.vercel.app',
-        tech: ['MongoDb', 'ExpressJs', 'React', 'NodeJs', 'Redux Toolkit']
+        link: 'https://chat-app-n9t6.onrender.com',
+        tech: ['MongoDb', 'ExpressJs', 'React', 'NodeJs', 'Redux Toolkit', 'Tailwind', 'SocketIO']
     },
     {
         id: 2,
@@ -37,14 +37,6 @@ const projects = [
         description: 'A weather app that displays the weather conditions of the desired location using REST API.',
         link:"https://weather-app-2-0-eta.vercel.app",
         tech: ['React', 'Redux Toolkit', 'Tailwind']
-    },
-    {
-        id: 4,
-        img: disney,
-        title: 'Disney+ UI Clone',
-        description: 'A fully interactive and responsive multi-page Disney-plus UI clone using ReactJs, Redux Toolkit and Firebase.',
-        link: 'https://disneyplusclonead.vercel.app/home',
-        tech: ['React', 'Redux Toolkit', 'Firebase']
     },
     {
         id: 5,
